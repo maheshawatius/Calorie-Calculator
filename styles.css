@@ -176,3 +176,55 @@ h1 span{color:var(--green)}
 .about-cta p{margin:0;color:#798379;font-size:11px;line-height:1.7}
 @media(max-width:900px){.about-hero{grid-template-columns:1fr 315px;gap:30px}.about-portrait{height:390px;width:min(100%,310px)}.about-hero-copy h1{font-size:47px}.about-story{gap:35px}}
 @media(max-width:720px){.about-hero{grid-template-columns:1fr;gap:32px;padding:45px 0 42px}.about-hero-copy h1{font-size:49px}.about-portrait{width:min(100%,370px);height:min(125vw,455px)}.about-story{grid-template-columns:1fr;gap:15px;padding:35px 0}.story-heading h2{font-size:27px}.about-values{grid-template-columns:1fr;gap:10px;padding-bottom:38px}.about-values article{display:grid;grid-template-columns:34px 1fr;column-gap:10px;padding:14px}.value-number{grid-column:1;grid-row:1/3;padding-top:3px}.about-values h3{grid-column:2;grid-row:1;margin:0 0 4px}.about-values p{grid-column:2;grid-row:2}.about-cta{align-items:flex-start;flex-direction:column;padding:20px}}
+/* Blog index and article layouts */
+.blog-intro{max-width:670px;padding:55px 8px 34px}
+.blog-intro h1{margin:20px 0 14px;font-size:clamp(44px,5.5vw,61px);line-height:1.1;letter-spacing:-3px}
+.blog-intro h1 span{color:var(--green)}
+.blog-intro>p{max-width:520px;margin:0;color:#727d73;font-size:14px;line-height:1.8}
+.blog-list{display:grid;gap:13px;padding:0 8px 42px}
+.post-card{display:grid;grid-template-columns:42px 1fr 154px;gap:18px;align-items:center;padding:22px;border:1px solid #e5e9e1;border-radius:13px;background:rgba(255,255,255,.78);transition:transform .2s,box-shadow .2s}
+.post-card:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(43,61,46,.07)}
+.post-number{align-self:start;padding-top:2px;color:#9bab91;font-family:Manrope,sans-serif;font-size:12px;font-weight:700}
+.post-content{min-width:0}
+.post-meta{display:flex;gap:12px;align-items:center;color:#829080;font-size:8px;font-weight:700;letter-spacing:1.05px}
+.post-meta span+span:before{content:"·";margin-right:12px;color:#b2bbb0}
+.post-content h2{margin:8px 0 7px;font-family:Manrope,sans-serif;font-size:19px;line-height:1.35;letter-spacing:-.55px}
+.post-content h2 a{color:#27352a;text-decoration:none}
+.post-content h2 a:hover{color:var(--green)}
+.post-content>p{max-width:600px;margin:0 0 11px;color:#7b857c;font-size:11px;line-height:1.7}
+.post-link{color:var(--green);text-decoration:none;font-size:10px;font-weight:700}
+.post-link:hover{text-decoration:underline;text-underline-offset:3px}
+.post-link span{margin-left:4px;font-size:14px}
+.post-art{height:103px;position:relative;overflow:hidden;display:grid;place-items:center;border-radius:10px}
+.post-art>span{font-family:Manrope,sans-serif;font-size:48px;font-weight:800;letter-spacing:-4px;color:rgba(255,255,255,.8)}
+.post-art i{position:absolute;right:15px;bottom:10px;font-size:22px;color:rgba(48,75,52,.48);font-style:normal}
+.post-art-one{background:linear-gradient(140deg,#e8eddf,#cdddc7)}.post-art-two{background:linear-gradient(140deg,#f0eddf,#e4d8bc)}.post-art-three{background:linear-gradient(140deg,#e4ece8,#c7d9d0)}
+.blog-cta{display:flex;justify-content:space-between;align-items:center;gap:25px;margin:0 8px 22px;padding:22px 25px;border:1px solid #e2e9dc;border-radius:13px;background:#edf2e9}
+.blog-cta h2{margin:7px 0 0;font-family:Manrope,sans-serif;font-size:20px;letter-spacing:-.7px}
+.article-shell{max-width:790px;margin:0 auto;padding:34px 8px 54px}
+.breadcrumb{display:inline-block;margin-bottom:25px;color:#6d806d;text-decoration:none;font-size:11px;font-weight:700}
+.breadcrumb:hover{text-decoration:underline;text-underline-offset:3px}
+.article-header{padding-bottom:24px;border-bottom:1px solid rgba(54,73,57,.12)}
+.article-header h1{margin:14px 0;font-family:Manrope,sans-serif;font-size:clamp(37px,5vw,52px);line-height:1.14;letter-spacing:-2.4px}
+.article-deck{max-width:680px;margin:0 0 18px;color:#727d73;font-size:15px;line-height:1.75}
+.article-byline{display:flex;align-items:center;gap:8px;color:#758074;font-size:10px;font-weight:600}
+.byline-mark{display:grid;place-items:center;width:27px;height:27px;border-radius:50%;background:#e3ebdc;color:#587457;font-size:9px;font-weight:800}
+.byline-separator{color:#a7b0a5}
+.article-body{max-width:690px;margin:0 auto;padding:27px 0 8px;color:#3d4940;font-size:14px;line-height:1.9}
+.article-body p{margin:0 0 17px}
+.article-body h2{margin:27px 0 10px;font-family:Manrope,sans-serif;font-size:23px;line-height:1.35;letter-spacing:-.6px;color:#26372a}
+.article-body ul{margin:0 0 18px;padding-left:21px;color:#465248}
+.article-body li{padding:3px 0 3px 3px}
+.article-note{margin:25px 0;padding:17px 18px;border-left:3px solid #8eaa80;border-radius:0 9px 9px 0;background:#edf2e9}
+.article-note strong{display:block;margin-bottom:5px;color:#426047;font-size:11px}
+.article-note p{margin:0;color:#68766a;font-size:11px;line-height:1.75}
+.article-sources{padding-top:12px;border-top:1px solid #e7ebe4}
+.article-sources h3{margin:0 0 6px;color:#526652;font-size:11px}
+.article-sources ul{margin:0;padding-left:17px;font-size:11px;line-height:1.8}
+.article-sources a{color:#4d7153}
+.next-article{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-top:26px;padding:16px 18px;border:1px solid #e2e9dc;border-radius:11px;background:#f0f4ed;color:#436449;text-decoration:none}
+.next-article small{display:block;margin-bottom:5px;color:#839281;font-size:8px;letter-spacing:1px;font-weight:700}
+.next-article strong{font-family:Manrope,sans-serif;font-size:13px}
+.next-article>span:last-child{font-size:19px}
+@media(max-width:720px){.blog-intro{padding:44px 0 28px}.blog-intro h1{font-size:49px}.blog-list{padding:0 0 33px}.post-card{grid-template-columns:28px 1fr;gap:11px;padding:16px}.post-art{grid-column:2;grid-row:1;width:100%;height:82px;margin-top:4px}.post-content h2{font-size:17px}.blog-cta{align-items:flex-start;flex-direction:column;margin:0 0 20px;padding:19px}.article-shell{padding:26px 0 40px}.article-header h1{font-size:39px}.article-deck{font-size:13px}.article-body{font-size:13px;line-height:1.85}.article-body h2{font-size:21px}.next-article strong{font-size:12px}}
+
